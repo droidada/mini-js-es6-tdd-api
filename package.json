@@ -1,0 +1,32 @@
+{
+  "name": "mini-js-es6",
+  "version": "1.0.0",
+  "description": "a node js es6 TDD starter project",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "test": "mocha --require @babel/register src/**/**.spec.js"
+  },
+  "author": "Ada Orajiaku <adaorajiaku@gmail.com> (ada.droidada.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "mongodb-memory-server": "^6.5.2",
+    "mongoose": "^5.9.10",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^7.1.1",
+    "sinon": "^9.0.2",
+    "sinon-mongoose": "^2.3.0"
+  }
+}
